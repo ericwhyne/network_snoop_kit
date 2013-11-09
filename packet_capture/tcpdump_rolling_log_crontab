@@ -1,0 +1,8 @@
+#!/bin/bash
+# Add this to a crontab to run hourly. 
+# Note: if you want to write to /var/log on a system with apparmor installed you need to apt-get 
+# install apparmor-utils and then aa-complain /usr/sbin/tcpdump if not you'll get permission denied error.
+killall -9 tcpdump
+tcpdump -w /var/log/tcpdump/all_$(date +%Y-%m-%dT%H:%M:%S).pcap
+
+

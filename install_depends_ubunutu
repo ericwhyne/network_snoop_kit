@@ -1,0 +1,10 @@
+#!/bin/bash
+sudo apt-get install tcpdump
+sudo apt-get install tcptrace
+
+# Network Miner
+sudo apt-get install libmono-winforms2.0-cil
+# I'm keeping the network miner zip file in this repo, but here's how to get it:
+# wget sourceforge.net/projects/networkminer/files/latest -O networkminer.zip
+
+

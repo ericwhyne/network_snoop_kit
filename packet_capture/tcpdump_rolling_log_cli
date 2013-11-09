@@ -1,0 +1,11 @@
+#!/bin/bash
+# This will run tcpdump for a few minutes, then restart it with a new file name.
+# Note: if you want to write to /var/log on a system with apparmor installed you need to apt-get 
+# install apparmor-utils and then aa-complain /usr/sbin/tcpdump if not you'll get permission denied error.
+# Note: you won't be able to ctrl-c this process. Timeout ignores it. find the PID and then kill-9 PID from another terminal
+
+while true
+do
+  timeout -sHUP 1m tcpdump -w /var/log/tcpdump/all_$(date +%Y-%m-%dT%H:%M:%S).pcap
+done
+
