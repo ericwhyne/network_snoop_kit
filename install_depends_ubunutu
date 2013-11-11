@@ -1,10 +1,17 @@
 #!/bin/bash
-sudo apt-get install tcpdump
-sudo apt-get install tcptrace
+sudo apt-get install tcpdump # capture packets and dump to file
+sudo apt-get install tcptrace # summarize traffic from packet captures
+sudo apt-get install driftnet # display images 
+sudo apt-get install tcpflow # extract files from pcap or interface
+sudo apt-get install foremost # recover files
+sudo apt-get install dsniff # packet capture shenanigans (penetration testing, password/file grabbing, etc)
 
-# Network Miner
+# Network Miner, GUI for exploring pcap files. 
 sudo apt-get install libmono-winforms2.0-cil
 # I'm keeping the network miner zip file in this repo, but here's how to get it:
 # wget sourceforge.net/projects/networkminer/files/latest -O networkminer.zip
+
+
+
 
 

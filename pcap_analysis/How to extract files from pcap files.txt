@@ -1,0 +1,5 @@
+To extract files from pcaps:
+tcpflow -r file.pcap -o flowfilesdiretory
+then
+foremost -i flowfilesdirectory/* -o filesdirectory/*
+There will be a directory structure created by file type.

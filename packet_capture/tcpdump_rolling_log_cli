@@ -6,6 +6,6 @@
 
 while true
 do
-  timeout -sHUP 1m tcpdump -w /var/log/tcpdump/all_$(date +%Y-%m-%dT%H:%M:%S).pcap
+  timeout -sHUP 60m tcpdump -w /var/log/tcpdump/all_$(date +%Y-%m-%dT%H:%M:%S).pcap
 done
 
